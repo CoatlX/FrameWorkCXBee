@@ -12,12 +12,12 @@ class homeController extends Controller{
                 //'title' => 'CoatlX Framework',
                 'bg' => 'dark'
             ];
-            View::render('coatlx', $data);
+            //View::render('coatlx', $data);
          /*   print_r($data);
             $data = to_Object($data);
             echo $data->id;*/
-            
-
+           // echo CONTROLLER ;
+           //echo METHOS; // para comprobar que nos den
     }
     function gastos(){
         $data =

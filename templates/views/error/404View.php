@@ -10,7 +10,7 @@
 
                 <div class="mt-5">
 
-                    <a href="movimientos" class="btn btn-success btn-lg"><i class="fas fa-undo"></i> Regresar</a>
+                    <a href="home" class="btn btn-success btn-lg"><i class="fas fa-undo"></i> Regresar</a>
 
                 </div>
                

@@ -1,0 +1,7 @@
+<?php 
+require_once INCLUDES.'inc_footer_moves.php'
+ ?>
+
+
+
+<h1>Estoy dentro de la View <?php echo $data; ?></h1>
