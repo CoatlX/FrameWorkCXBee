@@ -98,7 +98,7 @@ $(document).ready(function(){//Indica que si el documento está listo, se ejecut
            // toastr.error('Hubo un error en la petición', 'Valiósss!')////////
            usersADLoad.html('');
          }).always(function(){
-            usersADLoad.waitMe('hide');
+           usersADLoad.waitMe('hide');
          });
     }
     //Update movimiento
