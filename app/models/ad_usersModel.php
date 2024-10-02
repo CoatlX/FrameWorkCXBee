@@ -1,6 +1,6 @@
 <?php 
 
- class usuariosModel extends Model{
+ class ad_usersModel extends Model{
 
     public $id;
     public $user_name;
@@ -46,4 +46,15 @@
             throw $e;// 'Hubo un error: '.$e->getMessage();
                 }        //throw $th;
     }
+
+    public function all()
+{
+    $sql = 'SELECT * FROM tbl_ad_pass ORDER BY user_name ASC;';
+    try {
+        return ($rows = parent::query($sql, null)) ? $rows : false;
+    } catch (Exception $e) {
+        throw $e;
+    }
+    
+}
 }

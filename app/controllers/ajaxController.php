@@ -41,38 +41,19 @@
        }
        //json_output(json_build(200));
     }
-    function coatlx_get_movements(){
+    function coatlx_get_ad_users(){
+        json_output(json_build(200 , $data));
+       /* try {
+         
 
-       
-        try {
-            $movements       = new movementModel();
-        $movs            = $movements->all_by_date(/*date('Y-m-d H:i:s',strtotime('+1 month'))*/);
-
-           
-            $taxes           = (float)get_option('taxes') < 0 ? 16 : get_option('taxes');
-            $use_taxes       = get_option('use_taxes') === 'Si' ? true : false;
-
-            $total_movements = $movs[0]['total'];
-            $total           = $movs[0]['total_incomes'] - $movs[0]['total_expenses'];
-            $subtotal        = $use_taxes ?  $total / (1.0 + $taxes/100) : $total;
-            $taxes           = $subtotal * ($taxes/100);
-
-            $calculations = 
-            [
-                'total_movements' => $total_movements,
-                'subtotal' => $subtotal,
-                'taxes' => $taxes,
-                'total' => $total
-            ];
-
-            $data = get_module('movements', ['movements'=> $movs, 'cal' => $calculations]);
-           
+            $data = get_module('ad_users', $usuario);
+           json_output(json_build(200 , $data));
            
            } catch (Exception $e) {
             json_output(json_build(400 , $e->getMessage()));
-           }
+           }*/
            //json_output(json_build(200));
-           json_output(json_build(200 , $data));
+           
     }
     function coatlx_delete_movements(){
 
