@@ -41,18 +41,23 @@
        }
        //json_output(json_build(200));
     }
+    
     function coatlx_get_ad_users(){
-        json_output(json_build(200 , $data));
-       /* try {
-         
 
-            $data = get_module('ad_users', $usuario);
-           json_output(json_build(200 , $data));
+        
+        
+       try {
+            $usuarios = new ad_usersModel();
+            $usuario = $usuarios->all();
+            
+           $data = get_module('ad_users', $usuario);
+           
            
            } catch (Exception $e) {
             json_output(json_build(400 , $e->getMessage()));
-           }*/
+           }
            //json_output(json_build(200));
+           json_output(json_build(200 , $data));
            
     }
     function coatlx_delete_movements(){

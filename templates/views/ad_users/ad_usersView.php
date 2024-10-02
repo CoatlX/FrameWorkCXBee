@@ -20,7 +20,7 @@ require_once FUNCTIONS.'ad_users_functions.php';
    <div class="row">
       <div class="col 12 col-md-12 col-lg-12">
       <button id="btnget">Dale</button>
-        <div class="users_AD_ACD">
+        <div class="users_ad_acd">
             
                <!--  <a href="" class="btn btn-primary float-end" id = "btnget">Agregar equipo</a>  
                     -->

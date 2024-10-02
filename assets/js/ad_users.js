@@ -70,9 +70,9 @@ $(document).ready(function(){//Indica que si el documento está listo, se ejecut
     }
     //Read un movimiento
    // coatlx_get_ad_users();
-    $('#btnget').on('click', coatlx_get_ad_users);
+   coatlx_get_ad_users();
     function coatlx_get_ad_users(){
-        var usersADLoad = $('.users_AD_ACD'),//Se crea del bloque que conforma la segunda columna de los movimientos del indexView
+        var usersADLoad = $('.users_ad_acd'),//Se crea del bloque que conforma la segunda columna de los movimientos del indexView
         hook        = 'coatlx_hook',
         action      = 'load';
 

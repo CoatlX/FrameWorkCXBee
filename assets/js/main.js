@@ -9,6 +9,39 @@ $(document).ready(function(){//INdica que si el documento está listo, se ejecut
 //$('body').waitMe(); //Muestra de uso de waitMe
     //Funciones C R U D
     //Create un movimiento
+    coatlx_get_ad_users();
+    function coatlx_get_ad_users(){
+        var usersADLoad = $('.users_ad_acd'),//Se crea del bloque que conforma la segunda columna de los movimientos del indexView
+        hook        = 'coatlx_hook',
+        action      = 'load';
+
+        $.ajax({
+            url     : 'ajax/coatlx_get_ad_users',
+            type    : 'POST',
+            dataType: 'json',
+            cache   : false,
+            data    : {
+                hook, action
+            },
+            beforeSend: function(){
+                usersADLoad.waitMe();
+            }
+         }).done(function(respuesta){
+            if(respuesta.status === 200){
+                usersADLoad.html(respuesta.data);
+            }else{
+                toastr.error(respuesta.msg,'Valió!');
+                usersADLoad.html('');
+            }
+         }).fail(function(err) {
+           // toastr.error('Hubo un error en la petición', 'Valiósss!')////////
+           usersADLoad.html('');
+         }).always(function(){
+            usersADLoad.waitMe('hide');
+         });
+    }
+
+
     $('.coatlx_add_movement').on('submit', coatlx_add_movement);
     function coatlx_add_movement(event){
 
