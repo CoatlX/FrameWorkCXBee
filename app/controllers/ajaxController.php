@@ -43,9 +43,7 @@
     }
     
     function coatlx_get_ad_users(){
-
-        
-        
+  
        try {
             $usuarios = new ad_usersModel();
             $usuario = $usuarios->all();
