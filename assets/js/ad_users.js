@@ -8,7 +8,7 @@ $(document).ready(function(){//Indica que si el documento está listo, se ejecut
 //$('body').waitMe(); //Muestra de uso de waitMe
     //Funciones C R U D
     //Create un movimiento
-    console.log('Funko?????')
+
 
     $('.coatlx_add_movement').on('submit', coatlx_add_movement);
     function coatlx_add_movement(event){

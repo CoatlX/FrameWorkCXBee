@@ -117,7 +117,3 @@ function money($amount, $symbol='$'){
     return optionModel::search($option);
 }
 
-function conectarDB(){//Conectar a las base de datos
-    $db = require CLASSES.'Dab.php';
-    return $db; //Regresa un Objeto PDO (PHP Data Object)
-}

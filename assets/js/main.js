@@ -9,7 +9,7 @@ $(document).ready(function(){//INdica que si el documento está listo, se ejecut
 //$('body').waitMe(); //Muestra de uso de waitMe
     //Funciones C R U D
     //Create un movimiento
-    coatlx_get_ad_users();
+  /*  coatlx_get_ad_users();
     function coatlx_get_ad_users(){
         var usersADLoad = $('.users_ad_acd'),//Se crea del bloque que conforma la segunda columna de los movimientos del indexView
         hook        = 'coatlx_hook',
@@ -40,7 +40,7 @@ $(document).ready(function(){//INdica que si el documento está listo, se ejecut
             usersADLoad.waitMe('hide');
          });
     }
-
+*/
 
     $('.coatlx_add_movement').on('submit', coatlx_add_movement);
     function coatlx_add_movement(event){
