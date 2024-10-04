@@ -11,8 +11,8 @@
                 </thead>
                 <tbody>
                         <tr>
-                        <td>Nombre usuario</td>
-                        <td>Cuenta</td>
+                        <td>ID</td> 
+                        <td>$user_name</td>
                         <td>Contraseña</td>
                         <td>Departamento</td>
                         <td>Acciones </td>
