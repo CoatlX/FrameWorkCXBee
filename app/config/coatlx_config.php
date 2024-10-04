@@ -8,7 +8,7 @@ date_default_timezone_set('America/Mexico_City');
 //Idioma
 define('LANG','es');
 //Ruta base del proyecto con el ternario, si el local usa /Framework.../ si el EL BASEPATH EN PRODUCCIÓN
-define('BASEPATH', IS_LOCAL ? '/FrameWorkCXBee/' : '___EL BASEPATH EN PRODUCCIÓN___');
+define('BASEPATH', IS_LOCAL ? '/Oz_ACD_MVC/' : '___EL BASEPATH EN PRODUCCIÓN___');
 //Sal del sistema, pueder servir para agregar una capa de seguridad por ejemplo en los PASS, le 
 //agrega un string a la contraseña
 // Pass: 123, con la sal, quedaría 123CoatlX54$

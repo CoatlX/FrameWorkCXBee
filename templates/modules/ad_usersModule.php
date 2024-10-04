@@ -1,4 +1,10 @@
 
+        
+        <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">?</span>
+        <input type="text" class="form-control" placeholder="Escribe para buscar usuario..." aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+       
         <table class="table table-striped table-hover broder-2">
                 <thead>
                     <tr>
@@ -10,21 +16,16 @@
                     </tr>
                 </thead>
                 <tbody>
+                <?php $x=0;
+                 foreach ($dato as $usuario): ?>
                         <tr>
-                        <td>ID</td> 
-                        <td>$user_name</td>
-                        <td>Contraseña</td>
-                        <td>Departamento</td>
+                        <td ><?php echo $dato[$x]->user_name; ?></td> 
+                        <td><?php echo $dato[$x]->user_account; ?></td>
+                        <td><?php echo $dato[$x]->user_acc_pas; ?></td>
+                        <td><?php echo $dato[$x]->depto; ?></td>
                         <td>Acciones </td>
                         </tr>
-                        <tr>
-                        <td>Nombre usuario</td>
-                        <td>Cuenta</td>
-                        <td>Contraseña</td>
-                        <td>Departamento</td>
-                        <td>Acciones </td>
-                        </tr>
-                        
+                        <?php $x+= 1; endforeach; ?>
 
                 </tbody>
             </table>

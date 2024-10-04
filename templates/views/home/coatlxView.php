@@ -11,7 +11,7 @@
                     <li><b>100%</b> personalizable y escalable</li>
                 </ul>
                 <div class="mt-5">
-                    <a href="#" class="btn btn-primary btn-lg">Probar</a>
+                    <a href="http://localhost:8848/Oz_ACD_MVC/ad_users" class="btn btn-primary btn-lg">Usuarios AD</a>
                     <a href="#" class="btn btn-success btn-lg"><i class="fas fa-download"></i> Descargar</a>
                     <a href="#" class="btn btn-info btn-lg"><i class="fab fa-github"></i>Github</a>
                 </div>

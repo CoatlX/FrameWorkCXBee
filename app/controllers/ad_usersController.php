@@ -3,8 +3,7 @@
 class ad_usersController extends Controller{
     function __construct()
     {
-    $db = new Db;
-    //$db::connect();
+       //$db::connect();
     }
 
     function index(){
@@ -12,7 +11,7 @@ class ad_usersController extends Controller{
         $data =
             [
                 'title' => 'Lista de usuarios Acueducto',
-                'bg' => 'darsk'
+                'bg' => 'darkd'
 
             ];
         View::render('ad_users', $data);

@@ -92,7 +92,7 @@ function get_module($view, $data = [] ){
    
     $output = '';//Almacena todo el string que se va a almacenar
     //Por si queremos trabajar con objeto
-    $d = to_object($data);
+    $dato = to_object($data);
 
 
     if(!is_file($file_to_include)){//Valida si existe el archivo

@@ -22,6 +22,7 @@
 
         ];  
         try {
+            //Nos regresa el ID si se ha insertado correctamente
         return $this->id = parent::query($sql, $user) ? $this->id : false;
         } catch (Exception $e) {
             echo 'Hubo un error: '.$e->getMessage();
@@ -41,7 +42,8 @@
 
         ];  
         try {
-        return $this->id = parent::query($sql, $user) ? true: false;
+            //Regresa el ID del modificado
+        return $this->id = parent::query($sql, $user) ? true : false;
         } catch (Exception $e) {
             throw $e;// 'Hubo un error: '.$e->getMessage();
                 }        //throw $th;
@@ -51,6 +53,7 @@
 {
     $sql = 'SELECT * FROM tbl_ad_pass ORDER BY user_name ASC;';
     try {
+        //
         return ($rows = parent::query($sql, null)) ? $rows : false;
     } catch (Exception $e) {
         throw $e;
